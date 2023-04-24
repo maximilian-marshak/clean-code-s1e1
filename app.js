@@ -10,8 +10,8 @@
 
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("main-page__incomplete-tasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("main-page__completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.getElementById("list__incomplete-tasks");//ul of #incompleteTasks
+var completedTasksHolder=document.getElementById("list__completed-tasks");//completed-tasks
 
 
 //New task list item
@@ -85,7 +85,7 @@ var editTask=function(){
   var editInput=listItem.querySelector('input[type=text]');
   var label=listItem.querySelector("label");
   var editBtn=listItem.querySelector(".edit");
-  var containsClass=listItem.classList.contains("main-page__edit-mode");
+  var containsClass=listItem.classList.contains("list__edit-mode");
   //If class of the parent is .editmode
   if(containsClass){
 
@@ -99,7 +99,7 @@ var editTask=function(){
   }
 
   //toggle .editmode on the parent.
-  listItem.classList.toggle("main-page__edit-mode");
+  listItem.classList.toggle("list__edit-mode");
 };
 
 

@@ -13,7 +13,7 @@ body {
 .about img {
   width: 100%;
 }
-.about .about__inf {
+.about .about__link {
   font-family: "Fantasy", cursive;
 }
 
@@ -22,18 +22,19 @@ body {
     text-align: center;
   }
 }
-.main-page {
+.list {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.main-page__task {
+.list__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.main-page__input-wrapper {
+.list__input-wrapper {
   display: flex;
+  padding: 20px 0;
 }
 ul {
   margin: 0;
@@ -132,7 +133,7 @@ li > input[type="text"] {
 }
 
 /* Completed */
-#main-page__completed-tasks label {
+#list__completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
@@ -142,11 +143,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul .main-page__edit-mode input[type="text"] {
+ul .list__edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul .main-page__edit-mode label {
+ul .list__edit-mode label {
   display: none;
 }
